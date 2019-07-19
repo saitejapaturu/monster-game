@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="963.5" prefWidth="935.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainBoardController">
+   <children>
+      <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="playGame" mnemonicParsing="false" onAction="#menuItem" text=" Play Game" />
+                  <MenuItem fx:id="menuQuit" mnemonicParsing="false" onAction="#menuItem" text="Quit" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Control Player">
+              <items>
+                  <MenuItem fx:id="moveUp" mnemonicParsing="false" onAction="#controlPlayer" text="Move Up" />
+                  <MenuItem fx:id="moveDown" mnemonicParsing="false" onAction="#controlPlayer" text="Move Down" />
+                  <MenuItem fx:id="moveLeft" mnemonicParsing="false" onAction="#controlPlayer" text="Move Left" />
+                <MenuItem fx:id="moveRight" mnemonicParsing="false" onAction="#controlPlayer" text="Move right" />
+                  <MenuItem fx:id="dropPoison" mnemonicParsing="false" onAction="#controlPlayer" text="Drop Poison" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Group layoutX="-0.4882354736328125" layoutY="27.988235473632812">
+         <children>
+            <Group layoutX="85.48823547363281" layoutY="0.5117645263671875">
+               <children>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="85.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="170.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="255.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="510.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="595.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="680.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="85.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="170.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="255.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="510.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="595.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="680.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="85.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="170.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="255.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="510.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="595.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="680.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="0.4882354736328125" layoutY="85.51176452636719">
+               <children>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="595.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="595.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="850.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="850.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="850.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="850.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="850.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="850.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="850.0" layoutY="595.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="850.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straightPath.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="0.4882354736328125" layoutY="0.5117645263671875">
+               <children>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/3way.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/3way.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Images/3way.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="850.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../Images/3way.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group>
+               <children>
+                  <ImageView fitHeight="86.0" fitWidth="87.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/Curved.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="86.0" fitWidth="8686.0" layoutX="850.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../Images/Curved.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="86.0" fitWidth="86.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/Curved.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="86.0" fitWidth="86.0" layoutX="849.5" layoutY="850.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Images/Curved.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="85.48823547363281" layoutY="85.51176452636719">
+               <children>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="255.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="255.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="680.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="680.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="255.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="255.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="680.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="680.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Images/corner.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="85.48823547363281" layoutY="85.51176452636719">
+               <children>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="85.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="170.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="85.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="170.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="510.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="595.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="510.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="595.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="85.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="170.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="85.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="170.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="510.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="595.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="510.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="595.0" layoutY="680.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="255.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="255.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="680.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="680.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="595.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="255.0" layoutY="595.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="255.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="595.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="680.0" layoutY="595.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="680.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+                     <image>
+                        <Image url="@../Images/straight.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <Group layoutX="170.4882354736328" layoutY="170.5117645263672">
+               <children>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="85.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="510.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="510.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="85.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="85.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="510.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="510.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/space.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Group>
+            <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="425.4882354736328" layoutY="425.5117645263672" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/4way.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutX="10.0" layoutY="39.5">
+         <children>
+            <ImageView fx:id="heroGUI" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Hero1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="poisonedHeroGUI" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../Images/PoisonedHero1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutY="25.5">
+         <children>
+            <ImageView fx:id="monster1GUI" fitHeight="75.0" fitWidth="75.0" layoutX="850.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Monster1.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="poisonedMonster1GUI" fitHeight="75.0" fitWidth="75.0" layoutX="850.0" layoutY="850.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../Images/PoisonedMonster1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutY="35.5">
+         <children>
+            <ImageView fx:id="monster2GUI" fitHeight="75.0" fitWidth="75.0" layoutX="425.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Monster2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="poisonedMonster2GUI" fitHeight="75.0" fitWidth="75.0" layoutX="425.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../Images/PoisonedMonster2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutY="28.5">
+         <children>
+            <ImageView fx:id="poisonGUI" fitHeight="85.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@../Images/Poison.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
